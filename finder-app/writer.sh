@@ -20,7 +20,7 @@ fi
 mkdir -p $(dirname "$writefile")
 echo "$writestr" > "$writefile"
 
-if [ $? -ne 0  ]; then
+if [ $? -ne 0 ]; then
     log_error "Unable to create the file '$writefile'"
     exit 1
 fi	
